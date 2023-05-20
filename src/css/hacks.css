@@ -370,7 +370,6 @@ letter-spacing: 0em;
 }
 .dashboard-left, .dashboard-right{
   width: 50%;
-  border: 2px solid black
 }
 .dashboard-left{
   background-color: rgba(186, 126, 126, 1);
