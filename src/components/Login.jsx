@@ -82,10 +82,13 @@ function Login() {
               value={confirmPassword}
               onChange={handleConfirmPasswordChange}
             />
+            <p className="forgotpswd">
+            <Link to="/login">forgot password?</Link>
+            </p>
 
             <p className="text-center">
               <button type="submit" className="signup-btn">
-                Register
+                Login
               </button>
             </p>
           </form>
@@ -93,7 +96,7 @@ function Login() {
 
         <div className="acct">
           <p>
-            New to showALL? <Link to="/signup">Signup</Link>
+            New to sociALL? <Link to="/signup">Signup</Link>
           </p>
         </div>
       </div>
