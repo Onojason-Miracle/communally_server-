@@ -94,7 +94,7 @@ function Signup() {
           
 
             <p className="text-center">
-              <button type="submit" className='signup-btn'> <Link to="/dashboard">Register</Link></button>
+              <button type="submit" className='signup-btn'>Register</button>
             </p>
           </form>
 

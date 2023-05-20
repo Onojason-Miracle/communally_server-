@@ -76,16 +76,18 @@ function Login() {
             <PasswordInput value={password} onChange={handlePasswordChange}
             placeholder={"input your password"} />
 
-            <PasswordInput
+            {/* <PasswordInput
            
             placeholder={"please confirm your password"}
               value={confirmPassword}
               onChange={handleConfirmPasswordChange}
-            />
+            /> */}
 
             <p className="text-center">
               <button type="submit" className="signup-btn">
-                Register
+                <Link to="/dashboard">
+                  Login
+                </Link>
               </button>
             </p>
           </form>
