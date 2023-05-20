@@ -171,5 +171,15 @@
         .acct p{
             margin-top: 5%;
         }
+    .dashboard{
+      flex-direction: column;
+
+    }
+    .dashboard-left{
+      width: 100%;
+    }
+    .dashboard-right{
+      width: 100%;
+    }
   }
   
