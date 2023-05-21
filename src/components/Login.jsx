@@ -73,6 +73,18 @@ function Login() {
             </p>
             <p className="text-center">
               <button type="submit" className="signup-btn">
+
+                <Link to="/dashboard">
+                  Login
+                </Link>
+              </button>
+            </p>
+            <p className="forgotpswd">
+            <Link to="/login">forgot password?</Link>
+            </p>
+
+            <p className="text-center">
+              <button type="submit" className="signup-btn">
                 Login
               </button>
             </p>

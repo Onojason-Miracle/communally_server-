@@ -14,7 +14,10 @@ function Navbar() {
     <nav  className='Navwrapper'>
       <div className="Navbar">
       <div className="Navbar-brand">
-        <span className="logo">sociALL</span>
+        <span className="logo">
+            <img alt='logo' src='https://res.cloudinary.com/blackgirlmagic/image/upload/v1684602207/mlh-hack-logo_ersbbc.png' className='logo-img'/>
+            <p>sociALL</p>
+        </span>
         <button className={`Navbar-toggler ${isOpen ? 'active' : ''}`} onClick={toggleNavbar}>
   <span className="Navbar-toggler-icon"></span>
 </button>
@@ -37,7 +40,7 @@ function Navbar() {
             <Link to="/postevent" className="Nav-link">Post</Link>
           </li>
           <li className="Nav-item">
-            <Link to="/contact" className="Nav-link">profile</Link>
+            <Link to="/" className="Nav-link">profile</Link>
           </li>
         </ul>
       </div>
