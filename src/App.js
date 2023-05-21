@@ -7,6 +7,7 @@ import Homepage from "./components/Homepage";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
 import Postevent from "./components/Postevent";
+import Dashboard from "./components/Dashboard";
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
         <Route path="login" element={<Login />} />
 
         <Route path="postevent" element={<Postevent />} />
+
+        <Route path="dashboard" element={<Dashboard />} />
+
 
       </Routes>
     </BrowserRouter>

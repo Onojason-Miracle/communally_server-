@@ -76,11 +76,19 @@ function Login() {
             <PasswordInput value={password} onChange={handlePasswordChange}
             placeholder={"input your password"} />
 
-            <PasswordInput
+            {/* <PasswordInput
            
             placeholder={"please confirm your password"}
               value={confirmPassword}
               onChange={handleConfirmPasswordChange}
+            /> */}
+
+            <p className="text-center">
+              <button type="submit" className="signup-btn">
+                <Link to="/dashboard">
+                  Login
+                </Link>
+
             />
             <p className="forgotpswd">
             <Link to="/login">forgot password?</Link>
@@ -89,6 +97,7 @@ function Login() {
             <p className="text-center">
               <button type="submit" className="signup-btn">
                 Login
+
               </button>
             </p>
           </form>
