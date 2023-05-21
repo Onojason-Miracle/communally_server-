@@ -52,6 +52,7 @@ const CommentBox = () => {
                     onChange={handleChange}
                     placeholder="Write your comment..."
                 />
+                
                 <button style={{"background-color":"rgba(186, 126, 126, 1)", "border":"none", "color":"white","padding":"0.5rem","border-radius":"5px"}} type="submit">Submit</button>
             </form>
             <CommentList comments={commentsList} />
