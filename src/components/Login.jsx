@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-
+  const history = useNavigate();
   const handleUsernameChange = (e) => {
     setUsername(e.target.value);
   };
@@ -30,6 +30,7 @@ function Login() {
       if (response.ok) {
         // Login successful
         alert("Login successful");
+        history('/dashboard');
         // Redirect to dashboard or perform any other actions
       } else {
         // Login failed
@@ -80,21 +81,17 @@ function Login() {
               </button>
             </p>
             <p className="forgotpswd">
-            <Link to="/login">forgot password?</Link>
+              <Link to="/login">forgot password?</Link>
             </p>
 
-            <p className="text-center">
-              <button type="submit" className="signup-btn">
-                Login
-              </button>
-            </p>
           </form>
+          <div className="acct">
+            <p>
+              New to sociALL? <Link to="/signup">Signup</Link>
+            </p>
+          </div>
         </div>
-        <div className="acct">
-          <p>
-            New to sociALL? <Link to="/signup">Signup</Link>
-          </p>
-        </div>
+
       </div>
     </div>
   );
